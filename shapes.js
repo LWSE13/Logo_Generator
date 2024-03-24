@@ -24,7 +24,7 @@ class Square extends Shape {
 
 class Triangle extends Shape {
     shapeGeneration() {
-        const sides  =this.size * Math.sqrt(3) / 2;
-        return `<polygon points='0,${height} ${this.size / 2},0 ${this.size},${height}" fill='${this.color}" />`;
+        const sideHeight  =this.size * Math.sqrt(3) / 2;
+        return `<polygon points='0,${sideHeight} ${this.size / 2},0 ${this.size},${sideHeight}" fill='${this.color}" />`;
     }
 }
