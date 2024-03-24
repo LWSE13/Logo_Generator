@@ -18,6 +18,7 @@ class CLI {
             },
         ])
         .then(({ name }) => {
+            this.title = `${name}'s Tasks`;
             
         })
     }
