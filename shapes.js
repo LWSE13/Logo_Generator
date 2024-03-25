@@ -12,7 +12,7 @@ class Circle extends Shape {
     //circle is encapsulated within < /> as it is a HTML element
     shapeGeneration() {
         const radius = this.size / 2;
-        return `<circle cx=${radius} cy=${radius} r=${radius} fill=${this.colour} />`;
+        return `<circle cx=${radius} cy=${radius} r=${radius} fill=${this.colour}/>`;
     }
 }
 
@@ -25,6 +25,8 @@ class Square extends Shape {
 class Triangle extends Shape {
     shapeGeneration() {
         const sideHeight  =this.size * Math.sqrt(3) / 2;
-        return `<polygon points='0,${sideHeight} ${this.size / 2},0 ${this.size},${sideHeight}" fill='${this.color}" />`;
+        return `<polygon points='0,${sideHeight} ${this.size / 2},0 ${this.size},${sideHeight}" fill='${this.color}"/>`;
     }
 }
+
+module.exports = { Circle, Square, Triangle };
