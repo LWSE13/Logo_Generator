@@ -16,7 +16,6 @@ describe('shapes', () => {
     describe('Triangle', () => {
         it ('should correctly return a triangle SVG string with the desired deimensions', () => {
             const triangleTest = new Triangle ('green', 50);
-            const expectedHeight = 50 * Math.sqrt(3) / 2;
             expect(triangleTest.shapeGeneration()).toBe(`<polygon points="150, 18 244, 182 56, 182" fill="green"/>`)
         })
     })
