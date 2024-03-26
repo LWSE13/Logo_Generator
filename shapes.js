@@ -11,7 +11,6 @@ class Circle extends Shape {
     // called radius that is used to define the circle's x, y and r attributes
     //circle is encapsulated within < /> as it is a HTML element
     shapeGeneration() {
-        
         return `<circle cx="150" cy="100" r="80" fill=${this.colour}/>`;
     }
 }
@@ -24,7 +23,6 @@ class Square extends Shape {
 
 class Triangle extends Shape {
     shapeGeneration() {
-        const sideHeight  =this.size * Math.sqrt(3) / 2;
         return `<polygon points="150, 18 244, 182 56, 182" fill="${this.colour}"/>`;
     }
 }
