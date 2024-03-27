@@ -4,9 +4,10 @@ const questions = [
         name: 'text',
         message: 'What text would you like to add to the logo?',
         validate: (text) => {
-            if (text.length < 3) {
-                return 'Please enter up to 3 characters';
+            if (text.length <= 3) {
+                return true;
             }
+            return 'Please enter up to 3 characters';
         }
     },
     {

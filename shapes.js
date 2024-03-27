@@ -7,17 +7,15 @@ class Shape {
 
 class Circle extends Shape {
 
-    // shape generation takes the desired shape size and divides by two to create a new variable 
-    // called radius that is used to define the circle's x, y and r attributes
-    //circle is encapsulated within < /> as it is a HTML element
+
     shapeGeneration() {
-        return `<circle cx="150" cy="100" r="80" fill=${this.colour}/>`;
+        return `<circle cx="150" cy="100" r="80" fill="${this.colour}"/>`;
     }
 }
 
 class Square extends Shape {
     shapeGeneration() {
-        return `<rect x="90" y="40" width="120" height="120" fill=${this.colour}/>`;
+        return `<rect x="90" y="40" width="120" height="120" fill="${this.colour}"/>`;
     }
 }
 
